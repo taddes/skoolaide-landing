@@ -14,6 +14,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/terms-and-conditions',
+      name: 'terms',
+      component: Terms
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: Privacy
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
