@@ -4,7 +4,7 @@
 
       <v-layout row wrap>
         <v-flex xs12 sm6 md4 lg3 v-for="card in cards" :key="card.title">
-          <v-card class="text-xs-center ma-3">
+          <v-card class="rounded-card text-xs-center ma-3">
               <v-img :src="card.image" height="200px" alt="card.title"></v-img>
             <v-card-title>
               <div class="headline">{{ card.title }}</div>
@@ -48,6 +48,9 @@
  </script>
 
   <style>
+  .rounded-card {
+    border-radius: 10px;
+  }
   
   </style>
   

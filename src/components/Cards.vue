@@ -4,14 +4,14 @@
 
       <v-layout row wrap>
         <v-flex xs12 sm6 md4 lg3 v-for="card in cards" :key="card.title">
-          <v-card class="text-xs-center ma-3">
+          <v-card class=" rounded-card text-xs-center ma-3">
               <img :src="card.icon" height="200px" alt="card.title" />
             <v-card-text>
               <div class="heading">{{ card.title }}</div>
               <div class="paragraph">{{ card.paragraph }}</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="gold">
+              <v-btn class="gold justify-center">
                 <span class="text-uppercase">Get Started</span>
               </v-btn>
             </v-card-actions>
@@ -50,6 +50,9 @@
  </script>
 
   <style>
+  .rounded-card {
+    border-radius: 10px;
+  }
   
   </style>
   
