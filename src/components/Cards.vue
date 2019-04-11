@@ -3,16 +3,16 @@
     <v-container>
 
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="card in cards" :key="card.title">
-          <v-card class=" rounded-card text-xs-center ma-3">
-              <img :src="card.icon" height="200px" alt="card.title" />
-            <v-card-text>
-              <div class="heading">{{ card.title }}</div>
+        <v-flex xs12 sm6 md6 lg6 v-for="card in cards" :key="card.title">
+          <v-card class="rounded-card text-xs-center ma-4" height="350px">
+              <img :src="card.icon" height="100px" alt="card.title" class="mt-4"/>
+            <v-card-text class="px-5">
+              <div class="headline mb-3">{{ card.title }}</div>
               <div class="paragraph">{{ card.paragraph }}</div>
             </v-card-text>
-            <v-card-actions>
-              <v-btn class="gold justify-center">
-                <span class="text-uppercase">Get Started</span>
+            <v-card-actions class="justify-center">
+              <v-btn class="gold-button mb-4">
+                <span class="text-uppercase white--text">Get Started</span>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -52,6 +52,9 @@
   <style>
   .rounded-card {
     border-radius: 10px;
+  }
+  .gold-button {
+  background: #CEA955 !important;
   }
   
   </style>

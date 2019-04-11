@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import PrivacyPolicy from './views/PrivacyPolicy.vue'
+import TermsAndConditions from './views/TermsAndConditions.vue'
 
 Vue.use(Router)
 
@@ -16,12 +18,12 @@ export default new Router({
     {
       path: '/terms-and-conditions',
       name: 'terms',
-      component: Terms
+      component: TermsAndConditions
     },
     {
-      path: '/privacy',
+      path: '/privacy-policy',
       name: 'privacy',
-      component: Privacy
+      component: PrivacyPolicy
     },
     {
       path: '/about',

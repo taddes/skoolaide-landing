@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <v-toolbar app flat>
+    <Navbar />
+    <router-view></router-view>
+    <!-- <v-toolbar app flat>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
         <span class="font-weight-light">SKOOLAIDE</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -22,11 +23,11 @@
     </v-toolbar>
 
     <v-content>
-      <h1>Guide and reward<br>student success</h1>
-      <p>SkoolAide helps you set the right goals to earn<br>
+      <h1>Guide and rewardstudent success</h1>
+      <p class="headline">SkoolAide helps you set the right goals to earn<br>
       rewards you want on your way to success!</p>
       <v-spacer></v-spacer>
-      <v-btn flat>Get started</v-btn>
+      <v-btn flat class="">Get started</v-btn>
       <v-btn flat>Watch Video</v-btn>
     </v-content>
 
@@ -37,21 +38,24 @@
 
     <v-content>
       <HelloWorld/>
-    </v-content>
+    </v-content> -->
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import Cards from './components/Cards'
-import GetStarted from './components/GetStarted'
+import Navbar from '@/components/Navbar'
+// import Cards from '@/components/Cards'
+// import GetStarted from '@/components/GetStarted'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Cards,
-    GetStarted
+    Navbar,
+    // Cards,
+    // GetStarted,
+    Footer
   },
   data () {
     return {
@@ -60,3 +64,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.gold-button {
+  background-color: #CEA955;
+}
+</style>
+
