@@ -1,22 +1,22 @@
 <template>
   <nav>
-    <v-toolbar app flat>
+    <v-toolbar app flat scroll-toolbar-off-screen>
       <v-toolbar-title class="headline text-uppercase">
-        <span class="font-weight-light">SKOOLAIDE</span>
+        <router-link router :to="logo.href">
+        <img :src="logo.src" />
+        <!-- <v-img :src="logo.miniLogo" hidden-sm-and-up/> -->
+        </router-link>
+        <!-- <span class="font-weight-light">KARK</span> -->
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-title flat> 
-        <span class="text-uppercase">Have an account? Log In</span>
+      <v-toolbar-title flat > 
+        <span class="text-uppercase accent--text mr-3 hidden-sm-and-down">Have an account? </span>
       </v-toolbar-title>
       <v-toolbar-items>
         
       </v-toolbar-items>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Get Started</span>
+      <v-btn large flat class="accent" href="https://www.skoolaide.com/#/start" >
+        <span class="ma-1">Log In</span>
       </v-btn>
     </v-toolbar>
   </nav>
@@ -24,6 +24,17 @@
 
 <script>
 export default {
+  data() {
+    return {
+      logo: {
+          name: 'logo',
+          src: require('../assets/logo/logo.png'),
+          miniLogo: require('../assets/logo/logo_sm.png'),
+          href: '/'
+        }
+      
+    }
+  }
   
 }
 </script>
