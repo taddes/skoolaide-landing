@@ -1,8 +1,9 @@
 <template>
   <div id="container">
-    <v-content>
+    <v-content class="ma-4">
 
-      <p><strong> Privacy Policy</strong></p>
+      <h2><strong> Privacy Policy</strong></h2>
+      <br>
       <p>At SkoolAide LLC, your privacy is very important to us. This Privacy Policy explains our data collection and handling practices for the SkoolAide website, located at www.skoolaide.com (&ldquo;Site&rdquo;). It is meant to be read together with the <a href="https://www.naviance.com/terms-conditions">Terms &amp; Conditions</a>. By using the Site, you agree to the collection, use and disclosure of your personal information as described in this Privacy Policy. If you do not agree to the terms of this Privacy Policy, then please do not use the Site.</p>
       <p>If you are located outside of the United States, please be aware that the information you provide to us is transmitted to and processed in the United States. Data will be protected subject to this Privacy Policy and applicable law, which may be different from the laws in your country. By using this Site, you agree to this.&nbsp;</p>
       <p><strong>Information We Collect</strong></p>
