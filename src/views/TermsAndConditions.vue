@@ -1,7 +1,8 @@
 <template>
   <div id="container">
-    <v-content ma-4>
-       <p><strong>{{heading}}</strong></p>
+    <v-content class="ma-4">
+    <h2><strong>{{heading}}</strong></h2>
+    <br>
     <p><strong>SkoolAide LLC (herein &ldquo;SkoolAide&rdquo; or &ldquo;we&rdquo;) maintains this corporate website (the &ldquo;Service&rdquo;) subject to the terms and conditions, copyright notices, and trademark information described below. Your use of the Service constitutes an agreement by you to abide by these terms, notices, and conditions.</strong></p>
     <p><strong>Disclaimer of Warranties</strong> &mdash; This Service is available &ldquo;as is&rdquo;. We do not warrant that this Service will be uninterrupted or error-free. There may be delays, omissions, interruptions and inaccuracies in the news, information or other materials available through this Service. We are not responsible for the availability or content of other services that may be linked to this Service. We do not make any warranties, express or implied, including without limitation, those of merchantability and fitness for a particular purpose, with respect to this Service or any information or goods that are available or advertised or sold through this Service.</p>
     <p>We do not make any representations, nor do we endorse the accuracy, completeness, timeliness or reliability of any advice, opinion, statement or other material or database displayed, uploaded or distributed in this Service or available through links in this Service. We reserve the right to correct any errors or omissions in this Service. Although we intend to take reasonable steps to prevent the introduction of malware, viruses, worms, &ldquo;Trojan horses&rdquo; or other destructive materials to this Service, we do not guarantee or warrant that this Service or materials that may be downloaded from this Service do not contain such destructive features. We are not liable for any damages or harm attributable to such features. If you rely on this Service and any materials available through this Service, you do so solely at your own risk.</p>
