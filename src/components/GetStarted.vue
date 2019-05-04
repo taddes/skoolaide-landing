@@ -1,10 +1,6 @@
 <template>
   <div class="cards">
     <v-container class="text-xs-center">
-      <h1>SkoolAide helps you 'get paid' for doing well in school!</h1>
-      <p>Set goals.  Reach them. Unlock the reward that you earned!</p>
-      <v-spacer></v-spacer>
- 
       <v-layout  wrap>
         <v-flex xs12 sm6 md6 lg3 v-for="card in cards" :key="card.title">
           <v-hover>
@@ -38,8 +34,8 @@
  export default {
    data() {
      return {
-       header: 'SkoolAide helps you \'get paid\' for doing well in school.',
-       subheader: 'Build your team. Set your goals. Unlock your reward once you\'ve earned it!',
+       header: 'SkoolAide allows students to get rewarded for doing well in school.',
+       subheader: 'Set goals.  Reach them. Unlock the reward that you earned!',
        cards: [
          {title: 'Unlock video games',
           image: require('../assets/images/gaming.png') },
