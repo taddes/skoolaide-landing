@@ -1,22 +1,18 @@
 <template>
  <v-app>
   <v-img :src="banner.src" alt="Skoolaide">
-    <v-content app class="pa-2 white--text hidden-md-and-down" id="banner-content" >
-        <h1>Guide and reward student success</h1>
-        <p class="headline">SkoolAide helps you <strong>set</strong> goals and <strong>earn</strong><br> rewards for doing well in school!</p>
+    <v-content app class="pa-2 white--text hidden-sm-and-down" id="banner-content" >
+        <h1 id="header">Guide and reward student success</h1>
+        <p class="headline" id="secondary-header">SkoolAide helps you <strong>set</strong> goals and <strong>earn</strong><br> rewards for doing well in school!</p>
         <v-spacer></v-spacer>
-        <v-btn large class="" color="success" href="https://www.skoolaide.com/#/start" >Get started</v-btn>
+        <v-btn large class="" color="success" href="https://www.skoolaide.com/#/register" >Create Account</v-btn>
         <VideoModal />
       </v-content>
       <br>
       <br>
-      <br>
-     <v-content app class="pa-2 white--text hidden-md-and-down" id="tagline-content">
-        <h1>{{ tagLine.subheader }}</h1>
-      </v-content>
   </v-img>
 
-    <v-content class="pa-2 ma-2 hidden-lg-and-up text-xs-center" >
+    <v-content class="pa-2 ma-2 hidden-md-and-up text-xs-center" >
       <v-spacer></v-spacer>
       <br>
       <h1>Guide and reward student success</h1>
@@ -26,7 +22,7 @@
       <VideoModal />
     </v-content>
 
-      <v-content class="pa-2 ma-2 hidden-lg-and-up text-xs-center" >
+      <v-content class="pt-5 ma-2 mt-4 text-xs-center" id="tagline">
         <h1>{{ tagLine.subheader }}</h1>
       </v-content>
  
@@ -35,7 +31,6 @@
       column
       justify-center
     >
-
 
     <v-content>
       <GetStarted />
@@ -102,6 +97,20 @@ export default {
 }
 #tagline-content {
   margin-left: 50px;
+}
+#header {
+  font-size: 2.2em;
+}
+#tagline {
+  font-size: 1.4em;
+}
+@media screen and (min-width: 1248px) {
+  #header {
+      font-size: 3em;
+  }
+  #secondary-header {
+    font-size: 2.4em !important;
+  }
 }
 
 </style>
