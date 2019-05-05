@@ -27,7 +27,6 @@ export default {
           miniLogo: require('../assets/logo/logo_sm.png'),
           href: '/'
         }
-      
     }
   }
   

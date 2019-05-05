@@ -1,9 +1,6 @@
 <template>
   <div class="cards">
     <v-container class="text-xs-center">
-      <!-- <v-content app class="pa-2 black--text hidden-md-and-down" id="tagline-content">
-        <h1>{{ subheader }}</h1>
-      </v-content> -->
       <br>
       <v-layout  wrap>
         <v-flex xs12 sm6 md6 lg3 v-for="card in cards" :key="card.title">
@@ -18,13 +15,13 @@
           </v-card>
           </v-hover>
         </v-flex>
-          </v-layout>
+      </v-layout>
          
-        <v-layout class="justify-center" align-center justify-center> 
-          <v-btn large class="text--uppercase white--text secondary mt-5" href="https://www.skoolaide.com/#/register">
-            <span>Create Account</span>
-          </v-btn>
-        </v-layout>
+      <v-layout class="justify-center" align-center justify-center> 
+        <v-btn large class="text--uppercase white--text secondary mt-5" href="https://www.skoolaide.com/#/register">
+          <span>Create Account</span>
+        </v-btn>
+      </v-layout>
     
       <v-spacer></v-spacer>
 

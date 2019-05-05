@@ -1,5 +1,4 @@
 <template>
-
     <v-dialog v-model="dialog" max-width="800" height="1000">
       <template v-slot:activator="{ on }">
         <v-btn large v-on="on" @click="playVideo()">
@@ -15,9 +14,7 @@
           <youtube :video-id="videoId" ref="youtube"></youtube>
         </v-layout>
       </v-card>
-      
     </v-dialog>
-
 </template>
 
 <script>
