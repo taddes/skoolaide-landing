@@ -3,7 +3,7 @@
     <v-toolbar app flat scroll-toolbar-off-screen>
       <v-toolbar-title class="headline text-uppercase">
         <router-link router :to="logo.href">
-        <img :src="logo.src" />
+        <img id="logo" :src="logo.src" />
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -35,5 +35,15 @@ export default {
 </script>
 
 <style>
+#logo {
+  margin-top: 6px;
+}
+@media screen and (max-width: 378px) {
+  #logo {
+    width:150px;
+    height: auto;
+    margin-top:8px;
+  }
+}
 
 </style>
