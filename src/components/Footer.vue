@@ -15,7 +15,6 @@
       <v-card-actions class="justify-center">
        <router-link router :to="privacyPolicy">Privacy Policy</router-link> | <router-link router :to="TermsAndConditions">Terms of service</router-link>
       </v-card-actions>
-
       </v-card>
     </v-footer>
   </div>
